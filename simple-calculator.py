@@ -35,6 +35,8 @@ while True:
     elif arithmetic_operation=='/':
         result=firstN/secondN
     
+    print(f"Your inputs gathered the value\n:{result}")
+    
     restart=str(input("Would you like to try again? (y or n only.)\n:"))
     if restart.lower()=='n':
         break
