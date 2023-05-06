@@ -20,11 +20,11 @@ while True:
     elif arithmetic_operation=='/':
         print("You chose division")
     else:
-        print("Invalid.")
+        print("Invalid.\n")
         continue
     
-    firstN=int(input("What is your first number?\n"))
-    secondN=int(input("What is your second number?\n"))
+    firstN=int(input("\nWhat is your first number?\n"))
+    secondN=int(input("\nWhat is your second number?\n"))
     
     if arithmetic_operation=='+':
         result=firstN+secondN
@@ -34,7 +34,11 @@ while True:
         result=firstN*secondN
     elif arithmetic_operation=='/':
         result=firstN/secondN
-        
+    
+    restart=str(input("Would you like to try again? (y or n only.)\n:"))
+    if restart.lower()=='n':
+        break
+    
 # Ask user to input two numbers to conduct the arithmetic operation
 # Print the Result
 # Ask user whether to try again or not
