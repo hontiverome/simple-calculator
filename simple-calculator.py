@@ -28,8 +28,8 @@ def SimpleCalculator():
                 print("Invalid.\n")
                 continue
 
-            firstN = int(input("\nWhat is your first number?\n"))
-            secondN = int(input("\nWhat is your second number?\n"))
+            firstN = float(input("\nWhat is your first number?\n"))
+            secondN = float(input("\nWhat is your second number?\n"))
 
             if arithmetic_operation == '+':
                 result = firstN+secondN
