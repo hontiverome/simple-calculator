@@ -49,7 +49,8 @@ def SimpleCalculator():
                     print("Invalid.\nTry again? (y/n)\n:")
         except ZeroDivisionError:
             print("Sorry! You can't divide by zero.")
-            
+
+SimpleCalculator()
     
 # Ask user to input two numbers to conduct the arithmetic operation
 # Print the Result
