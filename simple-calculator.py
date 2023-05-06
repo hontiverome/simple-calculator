@@ -61,7 +61,7 @@ def SimpleCalculator():
         except ValueError:
             print("Sorry! Numbers only.")
         finally:
-            # End with Thank you!
+            # Displays 'Thank you!' whether if the user wants to exit or try again
             print("\nThank you!")
 
 
