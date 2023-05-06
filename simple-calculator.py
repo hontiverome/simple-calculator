@@ -12,7 +12,7 @@
 def SimpleCalculator():
     while True:
         try:
-            arithmetic_operation=str(input("Type the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
+            arithmetic_operation=str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
             if arithmetic_operation=='+':
                 print("You chose addition")
             elif arithmetic_operation=='-':
@@ -37,16 +37,16 @@ def SimpleCalculator():
             elif arithmetic_operation=='/':
                 result=firstN/secondN
             
-            print(f"Your inputs gathered the value\n:{result}")
+            print(f"\nHere is your result\n:{result}")
             
-            restart=str(input("Would you like to try again? (y or n only.)\n:"))
+            restart=str(input("\nWould you like to try again? (y or n only.)\n:"))
             while True:
                 if restart.lower()=='n':
                     return
                 elif restart.lower()=='y':
                     break
                 else:
-                    print("Invalid.\nTry again? (y/n)\n:")
+                    print("\nInvalid.\nTry again? (y/n)\n:")
         except ZeroDivisionError:
             print("Sorry! You can't divide by zero.")
 
