@@ -11,7 +11,9 @@
 # Ask user to use what arithmetic operation to use via input
 def SimpleCalculator():
     while True:
+        # Use defined python functions and exceptions to fix errors
         try:
+            # Ask user to input two numbers to conduct the arithmetic operation
             arithmetic_operation=str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
             if arithmetic_operation=='+':
                 print("You chose addition")
@@ -47,14 +49,16 @@ def SimpleCalculator():
                     break
                 else:
                     print("\nInvalid.\nTry again? (y/n)\n:")
+                    
         except ZeroDivisionError:
             print("Sorry! You can't divide by zero.")
+        finally:
+            print("Thank you!")
 
 SimpleCalculator()
     
-# Ask user to input two numbers to conduct the arithmetic operation
+
 # Print the Result
 # Ask user whether to try again or not
 # Repeat if yes
-# End program with "Thank you!" with no
-# Use defined python functions and exceptions to fix errors
+
