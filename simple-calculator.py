@@ -39,12 +39,16 @@ def SimpleCalculator():
             elif arithmetic_operation=='/':
                 result=firstN/secondN
             
+            # Print the Result
             print(f"\nHere is your result\n:{result}")
             
+            # Ask user whether to try again or not
             restart=str(input("\nWould you like to try again? (y or n only.)\n:"))
             while True:
+                # End if no
                 if restart.lower()=='n':
                     return
+                # Repeat if yes
                 elif restart.lower()=='y':
                     break
                 else:
@@ -55,12 +59,13 @@ def SimpleCalculator():
         except ValueError:
             print("Sorry! Numbers only.")
         finally:
-            print("Thank you!")
+            # End with Thank you!
+            print("\nThank you!")
 
 SimpleCalculator()
     
 
-# Print the Result
-# Ask user whether to try again or not
-# Repeat if yes
+
+
+
 
