@@ -52,6 +52,8 @@ def SimpleCalculator():
                     
         except ZeroDivisionError:
             print("Sorry! You can't divide by zero.")
+        except ValueError:
+            print("Sorry! Numbers only.")
         finally:
             print("Thank you!")
 
