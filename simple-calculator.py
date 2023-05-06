@@ -9,6 +9,7 @@
 # 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
 # Ask user to use what arithmetic operation to use via input
+arithmetic_operation=str(input("Type the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n:"))
 # Ask user to input two  numbers to conduct the arithmetic operation
 # Print the Result
 # Ask user whether to try again or not
