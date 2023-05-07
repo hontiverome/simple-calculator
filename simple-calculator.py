@@ -7,7 +7,7 @@
 # 5. If yes, repeat Step 1.
 # 6. If no, Display “Thank you!” and the program will exit
 # 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
-
+import time
 
 def SimpleCalculator():
     while True:
@@ -46,8 +46,12 @@ def SimpleCalculator():
             elif arithmetic_operation == '/':
                 result = firstN/secondN
 
-            print(f"Operation: {operation}")
-            print(f"Numbers to be computed: {firstN, secondN}")
+            print('Operation')
+            time.sleep(0.5)
+            print(f':{operation}')
+            print(f"Numbers to be computed")
+            time.sleep(0.5)
+            print(f':{firstN, secondN}')
             # Print the Result
             print(f"\nHere is your result\n:{result}")
 
