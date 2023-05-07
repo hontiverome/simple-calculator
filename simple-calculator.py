@@ -18,12 +18,16 @@ def SimpleCalculator():
                 "\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
             if arithmetic_operation == '+':
                 print("You chose addition")
+                operation='Addition'
             elif arithmetic_operation == '-':
                 print("You chose subtraction")
+                operation='Subtraction'
             elif arithmetic_operation == '*':
                 print("You chose multiplication")
+                operation='Multiplication'
             elif arithmetic_operation == '/':
                 print("You chose division")
+                operation='Division'
             else:
                 print("Invalid.\n")
                 continue
@@ -42,6 +46,8 @@ def SimpleCalculator():
             elif arithmetic_operation == '/':
                 result = firstN/secondN
 
+            print(f"Operation: {operation}")
+            print(f"Numbers to be computed: {firstN, secondN}")
             # Print the Result
             print(f"\nHere is your result\n:{result}")
 
