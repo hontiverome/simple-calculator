@@ -47,8 +47,9 @@ def SimpleCalculator():
                 result = firstN/secondN
 
             print('Operation')
-            time.sleep(0.5)
+            time.sleep(1)
             print(f':{operation}')
+            time.sleep(1.5)
             print(f"Numbers to be computed")
             time.sleep(0.5)
             print(f':{firstN, secondN}')
