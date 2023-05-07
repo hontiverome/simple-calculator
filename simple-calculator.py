@@ -17,16 +17,16 @@ def SimpleCalculator():
             arithmetic_operation = str(input(
                 "\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
             if arithmetic_operation == '+':
-                print("You chose addition")
+                print("\nYou chose addition")
                 operation='Addition'
             elif arithmetic_operation == '-':
-                print("You chose subtraction")
+                print("\nYou chose subtraction")
                 operation='Subtraction'
             elif arithmetic_operation == '*':
-                print("You chose multiplication")
+                print("\nYou chose multiplication")
                 operation='Multiplication'
             elif arithmetic_operation == '/':
-                print("You chose division")
+                print("\nYou chose division")
                 operation='Division'
             else:
                 print("Invalid.\n")
@@ -46,15 +46,19 @@ def SimpleCalculator():
             elif arithmetic_operation == '/':
                 result = firstN/secondN
 
-            print('Operation')
+            print('\nOperation')
             time.sleep(1)
-            print(f':{operation}')
+            print(f': {operation}')
             time.sleep(1.5)
             print(f"Numbers to be computed")
-            time.sleep(0.5)
-            print(f':{firstN, secondN}')
+            time.sleep(1)
+            print(f': {firstN, secondN}')
+            animation='...'
+            for i in range(len(animation)):
+                print(animation[i], end='', flush=True)
+                time.sleep(1.5)
             # Print the Result
-            print(f"\nHere is your result\n:{result}")
+            print(f"\n\nHere is your result\n:{result}")
 
             # Ask user whether to try again or not
             restart = str(
