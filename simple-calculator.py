@@ -8,12 +8,12 @@
 # 6. If no, Display “Thank you!” and the program will exit
 # 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
-# Ask user to use what arithmetic operation to use via input
+
 def SimpleCalculator():
     while True:
         # Use defined python functions and exceptions to fix errors
         try:
-            # Ask user to input two numbers to conduct the arithmetic operation
+            # Ask user to use what arithmetic operation to use via input
             arithmetic_operation = str(input(
                 "\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
             if arithmetic_operation == '+':
@@ -28,9 +28,11 @@ def SimpleCalculator():
                 print("Invalid.\n")
                 continue
 
+            # Ask user to input two numbers to conduct the arithmetic operation
             firstN = float(input("\nWhat is your first number?\n"))
             secondN = float(input("\nWhat is your second number?\n"))
 
+            # Computes the two numbers using the operation specified
             if arithmetic_operation == '+':
                 result = firstN+secondN
             elif arithmetic_operation == '-':
