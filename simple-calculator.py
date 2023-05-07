@@ -156,5 +156,5 @@ while True:
     else:
         print("Invalid.\n")
 
-#HONTIVEROS JEROME ANDREI O.
-#BSCPE 1-5
+# HONTIVEROS JEROME ANDREI O.
+# BSCPE 1-5
